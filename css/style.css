@@ -3,14 +3,22 @@
 .Nintendo-Classics-2-hex { color: #0511F2; }
 .Nintendo-Classics-3-hex { color: #0583F2; }
 .Nintendo-Classics-4-hex { color: #09A603; }
-.Nintendo-Classics-5-hex { color: #F2CB05; }
+.Nintendo-Classics-5-hex { color: #F2CB05; }*/
 
-/* Color Theme Swatches in RGBA 
-.Nintendo-Classics-1-rgba { color: rgba(216, 4, 22, 1); }
-.Nintendo-Classics-2-rgba { color: rgba(4, 16, 242, 1); }
-.Nintendo-Classics-3-rgba { color: rgba(4, 131, 242, 1); }
-.Nintendo-Classics-4-rgba { color: rgba(8, 165, 3, 1); }
-.Nintendo-Classics-5-rgba { color: rgba(242, 202, 4, 1); } */
+:root {
+    --black: #000000;
+    --blue: #0511F2;
+    --lightblue: #0583F2;
+    --green: #09A603;
+    --yellow:#F2CB05;
+    --eggshell: #f2f2f2;
+    --grey:#ADABAF;
+    --red: #D90416;
+    --sans: Verdana, Geneva, Tahoma, sans-serif;
+    --serif: Georgia, 'Times New Roman', Times, serif;
+    --animation: all 4s ease-in-out;
+    --box-shadow-1: 0 3px 15 px rgba(0, 0, 0, 0.3);
+  }
 
 * {
     padding: 0px;
@@ -18,18 +26,8 @@
 } 
 
 html {
-    background: #ADABAF;
+    background:var(--grey);
 }
-
-
-
-/* h1{
-    text-align: center;
-    color: #1e1e1e;
-    padding-top: 3vh;
-    display: block;
-    line-height: 50%;
-} */
 
 #navLogo {
     /* display: inline-block; */
@@ -52,21 +50,21 @@ nav ul {
 }
 
 nav a {
-    color: #D90416;
+    color: var(--red);
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--sans);
     text-decoration: none;
 }
 
 nav a:hover {
-    color: #09A603;
+    color: var(--red);
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--sans);
     text-decoration: none;
 }
 
 /* nav a:visited {
-    color: #F20505;
+    color: var(--red);
 } */
 
 .console {
@@ -94,12 +92,53 @@ figcaption {
     left: 25%;
 
 }
-h1 {
- 
+
+h1{
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: 3vh;
+    display: block;
+    line-height: 50%;
+} 
+
+#h1Home {
     /* padding: 10px 50px; */
     position: relative;
     border-radius: 10px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-family: var(--serif);
     text-align: center;
+}
+
+#h1Contact {
+    /* padding: 10px 50px; */
+    /* position: relative; */
+    color: var(--black);
+    font-family: var(--serif);
+    text-align: center;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+button {
+  background-color: var(--green);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--green);
+  cursor: pointer;
+  padding: 15px 25px;
 }
