@@ -110,11 +110,16 @@ h1{
     line-height: 50%;
 } 
 
+audio {
+    display: block;
+    margin: auto;
+}
+
 #h1Home {
     /* padding: 10px 50px; */
     position: relative;
     border-radius: 10px;
-    color: var(--black);
+    color: var(--eggshell);
     font-family: var(--serif);
     text-align: center;
 }
