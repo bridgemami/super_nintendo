@@ -8,6 +8,7 @@
 
 :root {
     --black: #000000;
+    --h1black: #212121;
     --blue: #0511F2;
     --lightblue: #0583F2;
     --green: #09A603;
@@ -25,6 +26,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-size: 1.5;
 } 
 
 html {
@@ -43,23 +45,25 @@ nav {
     padding: 20px;
     /* clear: both; */
 }
-
+p,li, figcaption {
+    font-size: 1.15rem;
+}
 nav ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-nav a {
+nav a, ol a {
     color: var(--red);
     font-weight: bold;
     font-family: var(--sans);
     text-decoration: none;
 }
 
-nav a:hover {
-    color: var(--red);
-    font-weight: bold;
+nav a:hover,  ol a:hover {
+    color: var(--blue);
+    font-size: 1.5rem;
     font-family: var(--sans);
     text-decoration: none;
 }
@@ -78,7 +82,7 @@ figcaption {
 }
 
 .gfg {
-    filter: blur(10px);
+    filter: blur(15px);
     height: 75%;
     width: 100%;
     margin: auto;
@@ -94,6 +98,13 @@ figcaption {
 
 }
 
+ol {
+    margin-left: 25px;
+    color: var(--red);
+    font-weight: bold;
+}
+
+
 .flex {
     display: flex;
     justify-content: flex-start;
@@ -102,13 +113,13 @@ figcaption {
     flex-wrap: wrap;
 }
 
-h1{
+/* h1{
     text-align: center;
-    color: #1e1e1e;
+    color: var(--h1black);
     padding-top: 3vh;
     display: block;
     line-height: 50%;
-} 
+}  */
 
 audio {
     display: block;
@@ -119,7 +130,7 @@ audio {
     /* padding: 10px 50px; */
     position: relative;
     border-radius: 10px;
-    color: var(--eggshell);
+    color: var(--h1black);
     font-family: var(--serif);
     text-align: center;
 }
@@ -132,6 +143,11 @@ audio {
     text-align: center;
     flex: 100%;
     font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 10px 0;
 }
 
 #pContact {
@@ -217,4 +233,10 @@ i {
 
 .about {
     margin: 1vh 0 1vh 0;
+}
+
+iframe  {
+    margin:auto;
+    display: block;
+
 }
