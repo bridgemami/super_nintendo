@@ -45,7 +45,7 @@ nav {
     padding: 20px;
     /* clear: both; */
 }
-p,li, figcaption {
+p,li, figcaption, a {
     font-size: 1.15rem;
 }
 nav ul {
@@ -54,14 +54,14 @@ nav ul {
     list-style-type: none;
 }
 
-nav a, ol a {
+nav a, ol a, figcaption a {
     color: var(--red);
     font-weight: bold;
     font-family: var(--sans);
     text-decoration: none;
 }
 
-nav a:hover,  ol a:hover {
+nav a:hover,  ol a:hover, figcaption a:hover {
     color: var(--blue);
     font-size: 1.5rem;
     font-family: var(--sans);
@@ -79,6 +79,7 @@ nav a:hover,  ol a:hover {
 
 figcaption {
     text-align: center;
+    padding: 10px;
 }
 
 .gfg {
@@ -198,11 +199,13 @@ footer {
 
 .twoA {
     flex: 50%;
+    padding-top: 15px;
 }
 
 .twoB {
     flex: 50%;
     text-align: right;
+    padding-top: 15px;
 }
 
 .twoA ul {
@@ -238,5 +241,13 @@ i {
 iframe  {
     margin:auto;
     display: block;
+    border: 0px;
+}
 
+.space {
+    padding: 5px 0 50px 0;
+}
+
+.bold {
+    font-weight: bold;
 }
