@@ -54,19 +54,20 @@ nav ul {
     list-style-type: none;
 }
 
-nav a, ol a, figcaption a {
+nav a, ol a, figcaption a, h3 a {
     color: var(--red);
     font-weight: bold;
     font-family: var(--sans);
     text-decoration: none;
 }
 
-nav a:hover,  ol a:hover, figcaption a:hover {
+nav a:hover,  ol a:hover, figcaption a:hover, h3 a:hover{
     color: var(--blue);
     font-size: 1.5rem;
     font-family: var(--sans);
     text-decoration: none;
 }
+
 
 /* nav a:visited {
     color: var(--red);
@@ -250,4 +251,13 @@ iframe  {
 
 .bold {
     font-weight: bold;
+}
+
+.map {
+    display: inline-block;
+    border: 0px;
+}
+
+summary h3 {
+    display: inline;
 }
