@@ -188,8 +188,16 @@ button:hover {
 }
 
 footer {
-    margin-top: 5vh;
-    height: 19.25vh;
+    /* margin-top: 5vh; */
+    /* height: 19.25vh; */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footerAbout {
+    padding-top: 0;
 }
 
 .rowFlex {
@@ -205,8 +213,9 @@ footer {
 
 .twoB {
     flex: 50%;
-    text-align: right;
+    text-align: center;
     padding-top: 15px;
+    /* padding-left: 15px; */
 }
 
 .twoA ul {
