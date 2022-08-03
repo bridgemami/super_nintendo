@@ -23,10 +23,8 @@
         </nav>
     </header>
     <main>
-        <section class="flex">
             <h1 id="h1Contact">Contact Page</h1>
-            <p id="pContact">If you like reach out, have questions or disagree with me, please contact me by filling out the form below.</p>
-        </section>    
+            <p id="pContact">If you like reach out, have questions or disagree with me, please contact me by filling out the form below.</p>    
             <form action="https://formspree.io/f/myyoravl" method="POST">
                 <label for="fname">First Name:</label>   
                 <input type="text" id="fname" name="firstname" placeholder="Your name.."><br />
@@ -36,17 +34,17 @@
                 <textarea id="subject" name="subject" placeholder="Do you have questions or comments"></textarea><br />
                 <p>Do/ Did you own a Super Nintendo?</p>
                 <input type="radio" id="snes_yes" name="snes" value="yes" checked>
-                <label for="snes_yes">Yes</label><br />
+                <label for="snes_yes" class="noBold">Yes</label><br />
                 <input type="radio" id="snes_no" name="snes" value="no" required>
-                <label for="snes_no">No</label><br />
+                <label for="snes_no" class="noBold">No</label><br />
                 <button type="submit">Send</button>
               </form>
     </main>
-    <footer class="footerFixed">
+    <footer class="fixedFooter">
         <div class="rowFlex">
             <div class="twoA">
                 <ul>
-                    <li><a href="./index.html">Homepage</a></li>
+                    <li><a href="./index.html" >Homepage</a></li>
                     <li class="about"><a href="./about.html">About</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>  
@@ -56,9 +54,9 @@
                 <a href="https://www.instagram.com/explore/tags/supernintendo/" target="_blank"><i class="fa-brands fa-instagram fa-3x instagram"></i></a>
                 <a href="https://twitter.com/search?q=%23SNES&src=typeahead_click&f=top" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
                 <p>&#169; Michael Bridgeman, 2022.</p>
+              </div>
             </div>
-            </div>
-    </footer>
+      </footer>
 </body>
 </html>
 
