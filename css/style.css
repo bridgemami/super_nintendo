@@ -27,10 +27,26 @@
     padding: 0px;
     margin: 0px;
     font-size: 1.5;
+    box-sizing: border-box;
 } 
 
 html {
     background:var(--grey);
+    /* height: 100%; */
+  }
+body {
+    height: 100vh;
+}
+
+.aboutBody {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutFooter{
+    margin-top: auto;
 }
 
 .navLogo {
@@ -54,24 +70,19 @@ nav ul {
     list-style-type: none;
 }
 
-nav a, ol a, figcaption a, h3 a {
+nav a, ol a, figcaption a, h3 a, a i, .twoA a {
     color: var(--red);
     font-weight: bold;
     font-family: var(--sans);
     text-decoration: none;
 }
 
-nav a:hover,  ol a:hover, figcaption a:hover, h3 a:hover{
+nav a:hover,  ol a:hover, figcaption a:hover, h3 a:hover, .twoA a:hover {
     color: var(--blue);
     font-size: 1.5rem;
     font-family: var(--sans);
     text-decoration: none;
 }
-
-
-/* nav a:visited {
-    color: var(--red);
-} */
 
 .console {
     margin: auto;
@@ -188,16 +199,19 @@ button:hover {
 }
 
 footer {
-    /* margin-top: 5vh; */
-    /* height: 19.25vh; */
-    position: relative;
-    left: 0;
-    bottom: 0;
     width: 100vw;
 }
 
-.footerAbout {
-    padding-top: 0;
+.footerFixed {
+    position:fixed;
+    bottom: 0;
+}
+
+.footerRelative {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .rowFlex {
@@ -225,28 +239,9 @@ footer {
     justify-content: space-between;
 }
 
-.twoA a {
-    color: var(--red);
-    font-weight: bold;
-    font-family: var(--sans);
-    text-decoration: none;
-    font-size: 1.25rem;
-}
-
-.twoA a:hover {
-    color: var(--blue);
-    font-weight: bold;
-    font-family: var(--sans);
-    text-decoration: none;
-}
-
-i {
-    color: var(--red);
-}
-
-.about {
+/* .about {
     margin: 1vh 0 1vh 0;
-}
+} */
 
 iframe  {
     margin:auto;
@@ -266,6 +261,7 @@ iframe  {
     display: inline-block;
     border: 0px;
 }
+
 
 summary h3 {
     display: inline;
